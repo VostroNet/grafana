@@ -202,7 +202,7 @@ steps:
   name: end-to-end-tests-server
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite
+  - ./bin/grabpl e2e-tests --port 3001 --suite dashboards-suite
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -211,7 +211,7 @@ steps:
   name: end-to-end-tests-dashboards-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite
+  - ./bin/grabpl e2e-tests --port 3001 --suite smoke-tests-suite
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -220,7 +220,7 @@ steps:
   name: end-to-end-tests-smoke-tests-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite
+  - ./bin/grabpl e2e-tests --port 3001 --suite panels-suite
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -229,7 +229,7 @@ steps:
   name: end-to-end-tests-panels-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite
+  - ./bin/grabpl e2e-tests --port 3001 --suite various-suite
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -519,7 +519,7 @@ steps:
   name: end-to-end-tests-server
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite
+  - ./bin/grabpl e2e-tests --port 3001 --suite dashboards-suite
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -528,7 +528,7 @@ steps:
   name: end-to-end-tests-dashboards-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite
+  - ./bin/grabpl e2e-tests --port 3001 --suite smoke-tests-suite
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -537,7 +537,7 @@ steps:
   name: end-to-end-tests-smoke-tests-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite
+  - ./bin/grabpl e2e-tests --port 3001 --suite panels-suite
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -546,7 +546,7 @@ steps:
   name: end-to-end-tests-panels-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite
+  - ./bin/grabpl e2e-tests --port 3001 --suite various-suite
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -1018,7 +1018,7 @@ steps:
   name: end-to-end-tests-server
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite dashboards-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -1027,7 +1027,7 @@ steps:
   name: end-to-end-tests-dashboards-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite smoke-tests-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -1036,7 +1036,7 @@ steps:
   name: end-to-end-tests-smoke-tests-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite panels-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -1045,7 +1045,7 @@ steps:
   name: end-to-end-tests-panels-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite various-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -1470,7 +1470,7 @@ steps:
   name: end-to-end-tests-server
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite dashboards-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -1479,7 +1479,7 @@ steps:
   name: end-to-end-tests-dashboards-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite smoke-tests-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -1488,7 +1488,7 @@ steps:
   name: end-to-end-tests-smoke-tests-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite panels-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -1497,7 +1497,7 @@ steps:
   name: end-to-end-tests-panels-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite various-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -1613,7 +1613,7 @@ steps:
   name: end-to-end-tests-server-enterprise2
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3002 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3002 --suite dashboards-suite --tries 3
   depends_on:
   - end-to-end-tests-server-enterprise2
   environment:
@@ -1622,7 +1622,7 @@ steps:
   name: end-to-end-tests-dashboards-suite-enterprise2
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3002 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3002 --suite smoke-tests-suite --tries 3
   depends_on:
   - end-to-end-tests-server-enterprise2
   environment:
@@ -1631,7 +1631,7 @@ steps:
   name: end-to-end-tests-smoke-tests-suite-enterprise2
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3002 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3002 --suite panels-suite --tries 3
   depends_on:
   - end-to-end-tests-server-enterprise2
   environment:
@@ -1640,7 +1640,7 @@ steps:
   name: end-to-end-tests-panels-suite-enterprise2
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3002 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3002 --suite various-suite --tries 3
   depends_on:
   - end-to-end-tests-server-enterprise2
   environment:
@@ -2058,7 +2058,7 @@ steps:
   name: end-to-end-tests-server
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite dashboards-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -2067,7 +2067,7 @@ steps:
   name: end-to-end-tests-dashboards-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite smoke-tests-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -2076,7 +2076,7 @@ steps:
   name: end-to-end-tests-smoke-tests-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite panels-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -2085,7 +2085,7 @@ steps:
   name: end-to-end-tests-panels-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite various-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -2499,7 +2499,7 @@ steps:
   name: end-to-end-tests-server
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite dashboards-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -2508,7 +2508,7 @@ steps:
   name: end-to-end-tests-dashboards-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite smoke-tests-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -2517,7 +2517,7 @@ steps:
   name: end-to-end-tests-smoke-tests-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite panels-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -2526,7 +2526,7 @@ steps:
   name: end-to-end-tests-panels-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite various-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -2634,7 +2634,7 @@ steps:
   name: end-to-end-tests-server-enterprise2
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3002 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3002 --suite dashboards-suite --tries 3
   depends_on:
   - end-to-end-tests-server-enterprise2
   environment:
@@ -2643,7 +2643,7 @@ steps:
   name: end-to-end-tests-dashboards-suite-enterprise2
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3002 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3002 --suite smoke-tests-suite --tries 3
   depends_on:
   - end-to-end-tests-server-enterprise2
   environment:
@@ -2652,7 +2652,7 @@ steps:
   name: end-to-end-tests-smoke-tests-suite-enterprise2
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3002 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3002 --suite panels-suite --tries 3
   depends_on:
   - end-to-end-tests-server-enterprise2
   environment:
@@ -2661,7 +2661,7 @@ steps:
   name: end-to-end-tests-panels-suite-enterprise2
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3002 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3002 --suite various-suite --tries 3
   depends_on:
   - end-to-end-tests-server-enterprise2
   environment:
@@ -3082,7 +3082,7 @@ steps:
   name: end-to-end-tests-server
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite dashboards-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -3091,7 +3091,7 @@ steps:
   name: end-to-end-tests-dashboards-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite smoke-tests-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -3100,7 +3100,7 @@ steps:
   name: end-to-end-tests-smoke-tests-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite panels-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -3109,7 +3109,7 @@ steps:
   name: end-to-end-tests-panels-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite various-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -3490,7 +3490,7 @@ steps:
   name: end-to-end-tests-server
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite dashboards-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -3499,7 +3499,7 @@ steps:
   name: end-to-end-tests-dashboards-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite smoke-tests-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -3508,7 +3508,7 @@ steps:
   name: end-to-end-tests-smoke-tests-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite panels-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -3517,7 +3517,7 @@ steps:
   name: end-to-end-tests-panels-suite
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3001 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3001 --suite various-suite --tries 3
   depends_on:
   - end-to-end-tests-server
   environment:
@@ -3634,7 +3634,7 @@ steps:
   name: end-to-end-tests-server-enterprise2
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3002 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3002 --suite dashboards-suite --tries 3
   depends_on:
   - end-to-end-tests-server-enterprise2
   environment:
@@ -3643,7 +3643,7 @@ steps:
   name: end-to-end-tests-dashboards-suite-enterprise2
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3002 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3002 --suite smoke-tests-suite --tries 3
   depends_on:
   - end-to-end-tests-server-enterprise2
   environment:
@@ -3652,7 +3652,7 @@ steps:
   name: end-to-end-tests-smoke-tests-suite-enterprise2
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3002 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3002 --suite panels-suite --tries 3
   depends_on:
   - end-to-end-tests-server-enterprise2
   environment:
@@ -3661,7 +3661,7 @@ steps:
   name: end-to-end-tests-panels-suite-enterprise2
 - commands:
   - yarn run cypress install
-  - ./bin/grabpl e2e-tests --port 3002 --suite --tries 3
+  - ./bin/grabpl e2e-tests --port 3002 --suite various-suite --tries 3
   depends_on:
   - end-to-end-tests-server-enterprise2
   environment:
@@ -3839,6 +3839,6 @@ kind: secret
 name: drone_token
 ---
 kind: signature
-hmac: de134a1242d1e43cc4187ab3e7bf6d1c57f0badc70e70054a063e41490d9a92d
+hmac: 7062d97c4c4ff17fcbc13093790f9d39c5762418aefe33b853a1ff6bc155cc71
 
 ...
